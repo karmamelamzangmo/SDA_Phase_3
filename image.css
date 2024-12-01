@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  header nav a:hover {
+    color: #ff69b4;
+  }
+
+  .intro {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro .text h1, .intro .text h2 {
+    margin: 10px 0;
+  }
+
+  .intro img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+
+  .intro .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .intro .btn:hover {
+    background-color: #ff4791;
+  }
+
+  .about, .services, .skills, .contact {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .service-item {
+    width: 100%;
+    max-width: 300px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.5);
+  }
+
+  .service-item h3 {
+    margin-top: 10px;
+  }
+
+  .skills .skill-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+  }
+
+  .skills .skill-bar div {
+    margin: 10px 0;
+  }
+
+  .skill-bar div span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .skill-bar div .bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .skill-bar div .bar-inner {
+    height: 20px;
+    background-color: #ff69b4;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact form input, .contact form textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact form .btn:hover {
+    background-color: #ff4791;
+  }
+
+  footer {
+    padding: 10px;
+    background-color: #000;
+    text-align: center;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service-container, .skills .skill-bar {
+      flex-direction: column;
+    }
+
+    .contact form input, .contact form textarea {
+      width: 100%;
+    }
+  }
